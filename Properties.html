@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>الهيا للعقارات</title>
+  <link rel="sortcut icon" type="imges/png" href="images/logo1.png">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script
+    src="https://kit.fontawesome.com/1165876da6.js"
+    crossorigin="anonymous"
+  ></script>
+</head>
+
+
+<body>
+  <!--begin header -->
+  <header>
+  <div class="banner">
+    <div class="navbar">
+      <h1 class="logo">الهيا للعقارات</h1>
+      <ul class="div_links_navbar">
+        <li><a href="home.html">الرئيسية</a></li>
+        <li><a href="Properties.html">العقارات</a></li>
+        <li><a href="AboutUs.html">من نحن</a></li>
+      </ul>
+    </div>
+  </header>
+    <!-- end header -->
+    <div class="content_pro">
+      <h1>اختيار العقارات</h1>
+      <a href="#div_table"><img src="images/arrow.png" alt="arrow"></a>
+    </div>
+    <div class="main">
+      <div class="table_s">
+        <table id="div_table" dir="ltr">
+          <tr>
+            <th> اختيار </th>
+            <th> إظهار التفاصيل </th>
+            <th> الإيجار الشهري </th>
+            <th> تفاصيل </th>
+            <th> المدينة </th>
+          </tr>
+          <tr>
+            <td> <input type="radio" onclick="selectRow(this)"></td>
+            <td> <input type="checkbox" onclick="checkbox1()" id="c1"> </td>
+            <td>ل.س 500000</td>
+            <td> شقة غرفة وصالة مساحة 70م</td>
+            <td> دمشق </td>
+
+          </tr>
+          <div>
+            <tr>
+              <td colspan="5" >
+                <pre id="d1" class="hidden">                المنطقة: ركن الدين                    متوفر كراج                 الطابق الثالث 
+               
+                    الملكية: طابو                       بلكون مساحة 12م                   مفروشة    
+              
+                    <img width="200" src="images/hh.png" >        <img width="200" src="images/hhh.png" >        <img width="200" src="images/h.png" >  
+             
+            </pre>
+              </td>
+            </tr>
+          </div>
+          <tr>
+            <td> <input type="radio" onclick="selectRow(this)"></td>
+            <td> <input type="checkbox" onclick="checkbox2()" id="c2"></td>
+            <td>500000ل.س</td>
+            <td> مكتب غرفتين وحمام مساحة 70م</td>
+            <td> دمشق</td>
+          </tr>
+          <div>
+            <tr>
+              <td colspan="5" >
+                <pre id="d2" class="hidden">                المنطقة: ساحة المرجة                    طابق ثاني فني مع مصعد                كهرباء متوفرة من 8 صباحاً حتى 2 ظهراً  
+               
+                              الملكية: طابو                                                       مفروش ومجهز بالكامل    
+              
+          <img width="210" height="200" src="images/e.jpg" >                   <img width="200" height="200" src="images/ee.jpg" >                <img width="200" height="200" src="images/eee.jpg" > 
+             
+            </pre>
+              </td>
+            </tr>
+          </div>
+          <tr>
+            <td> <input type="radio" onclick="selectRow(this)"></td>
+            <td> <input type="checkbox" onclick="checkbox3()" id="c3"></td>
+            <td>ل.س 600000</td>
+            <td> شقة فارغة غرفتين وصالة 110م</td>
+            <td> ريف دمشق </td>
+          </tr>
+          <tr>
+            <td colspan="5" >
+              <pre id="d3" class="hidden">                المنطقة: جرمانا                    حي الوحدة                 الطابق الثاني 
+               
+                    الملكية: طابو                       بلكون مساحة 6م                  غير مفروشة    
+              
+          <img width="200" height="200" src="images/l.png">                 <img width="200" src="images/nn.jpg" >               <img width="200" height="200" src="images/nnnnn.jpg" >  
+             
+            </pre>
+            </td>
+          </tr>
+          <tr>
+            <td> <input type="radio" onclick="selectRow(this)"></td>
+            <td> <input type="checkbox" onclick="checkbox4()" id="c4"></td>
+            <td>ل.س 400000</td>
+            <td> شقة غرفتين مساحة 60م</td>
+            <td>السويداء</td>
+          </tr>
+          <tr>
+            <td colspan="5" >
+              <pre id="d4" class="hidden">               المنطقة: السويداء المدينة                    حي الدبيسي                الطابق الثاني 
+               
+                  الملكية: طابو                           مفروشة                  تطل على حديقة عامة
+              
+          <img width="210" height="200" src="images/ss.jpg">                   <img width="200" height="200" src="images/sss.jpg" >  
+             
+            </pre>
+            </td>
+          </tr>
+          <tr>
+            <td> <input type="radio" onclick="selectRow(this)"></td>
+            <td> <input type="checkbox" onclick="checkbox5()" id="c5"></td>
+            <td>600000ل.س</td>
+            <td> محل مساحة 70م</td>
+            <td>دمشق</td>
+          </tr>
+          <tr>
+            <td colspan="5">
+              <pre id="d5" class="hidden">               المنطقة: باب تومة                                    الطابق الأول 
+               
+                    الملكية: طابو                       يصلح معرض فساتين                   غير مفروش    
+              
+          <img width="200" src="images/p.jpg" >        <img width="200" src="images/pp.jpg" >          <img width="200" src="images/ppp.jpg" >  
+             
+            </pre>
+            </td>
+          </tr>
+          <tr>
+            <td> <input type="radio" onclick="selectRow(this)"></td>
+            <td> <input type="checkbox" onclick="checkbox6()" id="c6"></td>
+            <td>ل.س 500000</td>
+            <td> محل 40م</td>
+            <td> دمشق</td>
+          </tr>
+          <tr>
+            <td colspan="5" >
+              <pre id="d6" class="hidden">               المنطقة: أبو رمانة                               الطابق الأول               يوجد مستودع  
+               
+                               الملكية: طابو                                    غير مفروش       
+              
+               <img width="200" height="200" src="images/z.png" >                        <img width="200" height="200" src="images/zz.png">  
+             
+            </pre>
+            </td>
+          </tr>
+          <tr>
+            <td> <input type="radio" onclick="selectRow(this)"></td>
+            <td> <input type="checkbox" onclick="checkbox7()" id="c7"></td>
+            <td>ل.س 800000</td>
+            <td> شقة غرفتين وصالون مساحة 120م</td>
+            <td> ريف دمشق </td>
+          </tr>
+          <tr>
+            <td colspan="5" >
+              <pre id="d7" class="hidden">               المنطقة: جرمانا حي النسيم             الطابق الرابع                        يوجد برندا  
+               
+                  الملكية: طابو                    واجهة على الشارع                      مفروشة
+              
+          <img width="200" height="200" src="images/ll.jpg">        <img width="200" height="200" src="images/lll.jpg" >          <img width="200" height="200" src="images/llll.jpg" >  
+             
+            </pre>
+            </td>
+          </tr>
+          <tr>
+            <td> <input type="radio" onclick="selectRow(this)"></td>
+            <td> <input type="checkbox" onclick="checkbox8()" id="c8"></td>
+            <td>400000ل.س</td>
+            <td> شقة غرفتين وصالون مساحة 85م</td>
+            <td> ريف دمشق</td>
+          </tr>
+          <tr>
+            <td colspan="5" >
+              <pre id="d8" class="hidden">               المنطقة: جرمانا-القوس                                     الطابق الخامس
+              الملكية: طابو                 تبعد عن الشارع العام 30م             مفروشة 
+              
+          <img width="200" height="200" src="images/c.jpg">        <img width="200" height="200" src="images/cc.jpg" >          <img width="200" height="200" src="images/ccc.jpg" >  
+             
+            </pre>
+            </td>
+          </tr>
+          <tr>
+            <td> <input type="radio" onclick="selectRow(this)"></td>
+            <td> <input type="checkbox" onclick="checkbox9()" id="c9"></td>
+            <td>ل.س 600000</td>
+            <td> مكتب للإيجار الإداري</td>
+            <td> حمص</td>
+          </tr>
+          <tr>
+            <td colspan="5" >
+              <pre id="d9" class="hidden">               المنطقة: بابا عمرو                                     الطابق الثالث  
+               
+              الملكية: طابو                 مفروش ومجهز إدارياً بالكامل              الغرفة مكيفة
+              
+          <img width="200" height="200" src="images/hw.jpg">        <img width="200" height="200" src="images/hw1.jpg" >          <img width="200" height="200" src="images/hw2.jpg" >  
+             
+            </pre>
+            </td>
+          </tr>
+          <tr>
+            <td> <input type="radio" onclick="selectRow(this)"></td>
+            <td> <input type="checkbox" onclick="checkbox10()" id="c10"></td>
+            <td>ل.س 2000000</td>
+            <td> مزارع للإيجار </td>
+            <td> دمشق </td>
+          </tr>
+          <tr>
+            <td colspan="5">
+              <pre id="d10" class="hidden">             المنطقة: الصبورة                                    يوجد مسابح مفلترة
+               
+                   نظافة تامة                                       كهرباء24
+              
+          <img width="200" height="200" src="images/wh.jpg">          <img width="200" height="200" src="images/wh1.jpg" >          <img width="200" height="200" src="images/wh2.jpg" >  
+            </pre>
+            </td>
+          </tr>
+        </table>
+
+      </div class='div_btn' ;>
+      <input class="btn btn-outline-info" type="button" value="متابعة"  onclick="button()">
+
+      <div class="contanier hidden" id="form">
+        <form action="" id="myform">
+          <div class="row">
+            <div class="column">
+              <h3 class="title">ادخل المعلومات الشخصية</h3>
+              <div class="input-box">
+                <span>الاسم الكامل:</span>
+                <input id="txt" type="text" name="text" placeholder="الاسم" pattern="^[\u0621-\u064A\s]+$" title="يرجى إدخال أحرف هجائية فقط باللغة العربية.">
+
+              </div>
+              <div class="input-box">
+                <span>تاريخ الولادة:</span>
+                <input id="data" type="date" name="date">
+
+              </div>
+              <div class="input-box">
+                <span>الإيميل:</span>
+
+                <input type="email" placeholder="example@example.com">
+              </div>
+
+              <div class="input-box">
+                <span>رقم الموبايل :</span>
+
+                <input id="tel" type="tel" min="093" length="10" name="tel" placeholder="099 "  pattern="^(09[3-8]\d{7})$" title="يرجى إدخال رقم هاتف صحيح يبدأ بـ 09 ويتبعه 8 أرقام.">
+              </div>
+              <div class="input-box">
+                <span>الرقم الوطني:</span>
+                
+                <span>
+                  <select class="form-select form-select-sm">
+                    <option value="01"> 01 </option>
+                    <option value="02"> 02 </option>
+                    <option value="03"> 03 </option>
+                    <option value="04"> 04 </option>
+                    <option value="05"> 05 </option>
+                    <option value="06"> 06 </option>
+                    <option value="07"> 07 </option>
+                    <option value="08"> 08 </option>
+                    <option value="09"> 09 </option>
+                    <option value="10"> 10 </option>
+                    <option value="11"> 11 </option>
+                    <option value="12"> 12 </option>
+                    <option value="13"> 13 </option>
+                    <option value="14"> 14 </option>
+                  </select>
+                </span>
+                <input id="num" type="number" max length="9"  name="id" required pattern="^(0[1-9]|1[0-4])\d{9}$" title="يرجى إدخال رقم وطني صحيح مكون من 11 خانة، حيث تشير الخانتين الأوليين إلى المحافظة." />
+                <label for="captcha">الرجاء إدخال الرقم التالي:</label>
+              <div id="captchaContainer"></div>
+              <input type="text" id="captchaInput" required pattern="^\d{5}$" title="يرجى إدخال الرقم المكون من 5 أرقام المعروض في الكابتشا."placeholder="00000">
+              </div>
+              <input class="btn btn-outline-info" type="submit" value="إرسال"> 
+              
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <footer class="footer" dir="ltr">
+      <div class="container">
+        <div class="footer-content">
+          <h3>Contact Us</h3>
+          <p>Email:Info@example.com</p>
+          <p>Phone:+963 956 891 619</p>
+          <p>Address: Damascus/ Syria  </p>
+        </div>
+        <div class="footer-content">
+          <h3>Quick Links</h3>
+          <ul class="list">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="AboutUs.html">About</a></li>
+            <li><a href="Properties.html">Properties</a></li>
+          </ul>
+        </div>
+        <div class="footer-content">
+          <h3>Follow Us</h3>
+          <ul class="social-icons">
+            <li>
+              <a href="#"><i class="fab fa-facebook"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-linkedin"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="bottom-bar">
+        <p>&copy; 2024 your company . All rights reserved</p>
+      </div>
+    </footer>
+</html>
+
+<script src="script.js"></script>
+</body>
+
+</html>

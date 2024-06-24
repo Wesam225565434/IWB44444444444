@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+    <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+		<link rel="sortcut icon" type="imges/png" href="images/logo1.png" />
+    <title>عرض البيانات</title>
+    <style></style>
+  </head>
+  <body>
+    <div class="div_details">
+      <h1 class="head1-prodect">عرض البيانات</h1>
+
+      <div id="property-list"></div>
+    </div>
+
+    <script>
+      function loadData() {
+        const data = JSON.parse(sessionStorage.getItem("rowData")) || [];
+        const propertyList = document.getElementById("property-list");
+
+        data.forEach((item) => {
+          const propertyDiv = document.createElement("div");
+          propertyDiv.className = "property";
+
+          const price = document.createElement("p");
+          price.textContent = `السعر: ${item.price}`;
+          propertyDiv.appendChild(price);
+
+          const description = document.createElement("p");
+          description.textContent = `الوصف: ${item.description}`;
+          propertyDiv.appendChild(description);
+
+          const location = document.createElement("p");
+          location.textContent = `الموقع: ${item.location}`;
+          propertyDiv.appendChild(location);
+
+          const details = document.createElement("p");
+          details.textContent = `التفاصيل: ${item.details}`;
+          propertyDiv.appendChild(details);
+
+          if (item.images) {
+            item.images.forEach((src) => {
+              const img = document.createElement("img");
+              img.src = src;
+              propertyDiv.appendChild(img);
+            });
+          }
+
+          propertyList.appendChild(propertyDiv);
+        });
+      }
+      window.onload = loadData;
+    </script>
+  </body>
+</html>
